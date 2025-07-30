@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400&display=swap');
+
+:root {
+    --bg-color: #f4f4f2;
+    --primary: #9da993;
+    --secondary: #b9b3c4;
+    --text-color: #333;
+    --accent:#8f9e8b
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.container {
+    max-width: 700 px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0,0.5);
+    border: 2px solid var(--secondary);
+}
+
+nav {
+    color: var(--accent);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--secondary);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var (--accent);
+}
+
+#quote-box, #mood-form {
+    margin-bottom: 1.5rem;
+}
+
+#quote-text {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+#saved-quote {
+    color: var(--primary);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
