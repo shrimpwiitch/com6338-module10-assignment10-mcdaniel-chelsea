@@ -29,7 +29,7 @@ h1, h2, h3 {
 }
 
 .container {
-    max-width: 700 px;
+    max-width: 700px;
     margin: 0 auto;
     background-color: white;
     padding: 2rem;
@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: var (--accent);
+    background-color: var(--accent);
 }
 
 #quote-box, #mood-form {
@@ -83,4 +83,23 @@ img {
     max-width: 100%;
     border-radius: 12px;
     margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
 }
